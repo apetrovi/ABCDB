@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="GUIDemoPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>databases.Publishers</class>
+    <class>databases.Authors</class>
+    <class>databases.Titles</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://mqpmedsvvl.database.windows.net;databaseName=bookdb2"/>
+      <property name="javax.persistence.jdbc.password" value="20panamaCITYbeach10"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.user" value="csadmin@mqpmedsvvl"/>
+    </properties>
+  </persistence-unit>
+</persistence>
